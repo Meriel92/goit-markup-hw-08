@@ -1,0 +1,20 @@
+.nav {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.nav-list {
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.nav-item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.nav-btn {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
