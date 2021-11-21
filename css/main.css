@@ -144,11 +144,18 @@ body {
 }
 
 .burger-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: transparent;
   cursor: pointer;
   padding: 0;
   line-height: 0;
+  margin-left: auto;
   border: none;
+  width: 40px;
+  height: 40px;
+  color: #212121;
 }
 
 @media screen and (min-width: 767px) {
@@ -183,7 +190,7 @@ body {
   pointer-events: all;
 }
 
-.close-btn {
+.mobile-close-btn {
   position: absolute;
   top: 10px;
   right: 15px;
@@ -201,16 +208,18 @@ body {
   height: 40px;
 }
 
-@media screen and (max-width: 767px) {
-  .header__list {
-    display: none;
-  }
+.header__logo {
+  margin-right: 93px;
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #000000;
 }
 
-@media screen and (max-width: 767px) {
-  .header-adress__list {
-    display: none;
-  }
+.header__accent {
+  color: var(--accent-color);
 }
 
 .hero {
@@ -859,7 +868,7 @@ body {
   margin: -1px;
 }
 
-.social-link, .about-icon-box, .social-list, .clients-list, .clients-link, .footer-container, .footer-form-btn, .backdrop, .check-text, .check-text span, .close-btn {
+.social-link, .header__nav, .about-icon-box, .social-list, .clients-list, .clients-link, .footer-container, .footer-form-btn, .backdrop, .check-text, .check-text span, .close-btn {
   display: flex;
   align-items: center;
   justify-content: center;
