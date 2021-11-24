@@ -3,13 +3,13 @@
   // padding-top: 94px;
   // padding-bottom: 94px;
 
-  // padding-top: 60px;
-  // padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
     padding-bottom: 94px;
   }
-  margin: 0 auto;
+  margin: 0px auto;
 }
 
 .team-list {
@@ -26,9 +26,8 @@
 
 .team-item {
   margin-bottom: 30px;
+  background-color: #ffffff;
 
-  // flex-basis: calc(100% / 3 - 30px);
-  // margin-left: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -49,6 +48,7 @@
 .team-leaders {
   background-color: var(--white);
   padding: 30px 0px;
+  margin: 0 auto;
 }
 
 .team-item-title {
