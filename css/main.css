@@ -37,10 +37,10 @@ body {
 
 .container {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media screen and (min-width: 480px) {
@@ -604,11 +604,10 @@ body {
 .social-item {
   width: 44px;
   height: 44px;
-  margin-right: 10px;
 }
 
-.social-item:not(:last-child) {
-  margin-right: 10;
+.social-item + .social-item {
+  margin-left: 10px;
 }
 
 .social-icon {
@@ -617,29 +616,56 @@ body {
 }
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 30px;
+}
+
+@media screen and (min-width: 1200px) {
   .clients-list {
-    display: flex;
-    flex-wrap: wrap;
-    flex-basis: calc(100% / 4 - 30px);
+    flex-wrap: nowrap;
   }
 }
 
 .clients-item {
+  height: 90px;
   border-radius: 4px;
 }
 
-.clients-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 767px) {
+  .clients-item {
+    width: 210px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-item {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-item {
+    width: 170px;
+  }
 }
 
 .clients-link {
-  width: 170px;
-  height: 92px;
+  padding: 16px 32px;
   border-radius: 4px;
   border: 1px solid #afb1b8;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -665,19 +691,65 @@ body {
   background-color: var(--primary-fon-footer-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .footer {
+    text-align: center;
+  }
+}
+
+.footer-container {
+  display: block;
+}
+
+@media screen and (min-width: 767px) {
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+  }
+}
+
 .footer-left {
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-left {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-right {
   display: block;
   flex-direction: column;
   margin-left: 70px;
+  width: 206px;
 }
 
-.footer-social-list {
-  margin-right: 10px;
+@media screen and (max-width: 767px) {
+  .footer-right {
+    margin: auto;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-right {
+    margin-left: 25px;
+  }
 }
 
 .footer-social-link {
@@ -738,9 +810,22 @@ body {
   margin-bottom: 9px;
 }
 
+.footer-form {
+  display: flex;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-form {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 .footer-form-box {
   display: block;
-  margin-left: 93px;
 }
 
 .footer-form-text {
@@ -751,10 +836,6 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white);
-}
-
-.footer-form {
-  display: flex;
 }
 
 .footer-form-input {
@@ -782,6 +863,12 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media screen and (max-width: 1199px) {
+  .footer-form-input {
+    width: 450px;
+  }
+}
+
 .footer-form-btn {
   width: 200px;
   height: 50px;
@@ -796,6 +883,13 @@ body {
 .footer-form-btn:hover .footer-form-icon,
 .footer-form-btn:focus .footer-form-icon {
   fill: var(--accent-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-form-btn {
+    margin-left: 0;
+    margin-top: 20px;
+  }
 }
 
 .footer-form-icon {
@@ -989,18 +1083,43 @@ body {
 }
 
 .nav {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .nav {
+    padding-top: 94px;
+  }
 }
 
 .nav-list {
   display: flex;
   margin-bottom: 50px;
-  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nav-list {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .nav-item:not(:last-child) {
   margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-item:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 
 .nav-btn {
@@ -1008,15 +1127,28 @@ body {
 }
 
 .menu-nav__list {
-  display: flex;
-  flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-nav__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .menu-nav__item {
   cursor: pointer;
-  flex-basis: calc(100% / 3 - 30px);
+  width: 100%;
   margin-left: 30px;
   margin-top: 30px;
   border: 1px solid #eeeeee;
@@ -1031,6 +1163,20 @@ body {
   transform: translateY(0);
 }
 
+@media screen and (min-width: 768px) {
+  .menu-nav__item {
+    flex-basis: calc(100% / 2 - 30px);
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-nav__item {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
 .menu-top__wrapper {
   position: relative;
   overflow: hidden;
@@ -1040,8 +1186,8 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 370px;
-  height: 294px;
+  width: 100%;
+  height: 100%;
   transform: translateY(100%);
   transition: transform 250ms linear;
   padding-top: 42px;
@@ -1100,7 +1246,7 @@ body {
   margin: -1px;
 }
 
-.social-link, .header__nav, .header__container, .about-icon-box, .social-list, .clients-list, .clients-link, .footer-container, .footer-form-btn, .backdrop, .check-text, .check-text span, .close-btn {
+.social-link, .header__nav, .header__container, .about-icon-box, .social-list, .clients-link, .footer-form-btn, .backdrop, .check-text, .check-text span, .close-btn {
   display: flex;
   align-items: center;
   justify-content: center;
