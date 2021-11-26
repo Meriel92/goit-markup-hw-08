@@ -309,8 +309,11 @@ body {
   }
 }
 
-.header-adress__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-adress__list {
+    flex-direction: column;
+    align-content: center;
+  }
 }
 
 .header__icon {
@@ -1246,7 +1249,7 @@ body {
   margin: -1px;
 }
 
-.social-link, .header__nav, .header__container, .about-icon-box, .social-list, .clients-link, .footer-form-btn, .backdrop, .check-text, .check-text span, .close-btn {
+.social-link, .header__nav, .about-icon-box, .social-list, .clients-link, .footer-form-btn, .backdrop, .check-text, .check-text span, .close-btn {
   display: flex;
   align-items: center;
   justify-content: center;
