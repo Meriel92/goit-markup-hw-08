@@ -56,7 +56,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  // height: 100%;
   // width: 370px;
   // height: 294px;
   // @include width-height(370px, 294px);
@@ -76,6 +76,10 @@
 
   color: var(--white);
   background: rgba(33, 150, 243, 0.9);
+
+  @media screen and (min-width: 480px) {
+    height: 100%;
+  }
 }
 
 .menu-nav__work {

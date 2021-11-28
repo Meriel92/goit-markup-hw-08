@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!--Хедер-->
+     <!--Хедер-->
     <header class="header">
       <div class="container">
         <div class="header__container">
@@ -29,10 +29,10 @@
             </a>
             <ul class="header__list list">
               <li class="header__item">
-                <a href="./index.html" class="header__link link">Студия</a>
+                <a href="./index.html" class="header__link link current">Студия</a>
               </li>
               <li class="header__item">
-                <a href="./portfolio.html" class="header__link link current"
+                <a href="./portfolio.html" class="header__link link "
                   >Портфолио</a
                 >
               </li>
@@ -41,27 +41,72 @@
               </li>
             </ul>
           </nav>
-
-          <ul class="header-adress__list list">
+           <ul class="header-adress__list list">
             <li class="header-adress__item">
               <a class="header__mail link" href="mailto:info@devstudio.com">
                 <svg class="header__icon" width="16" height="12">
                   <use href="./images/symbol-defs.svg#envelope"></use>
                 </svg>
-
                 info@devstudio.com
               </a>
             </li>
             <li class="header-adress__item">
-              <a class="header__tel link" href="tel:+380961111111">
+              <a class="header__tel link" href="tel:+38 096 111 11 11">
                 <svg class="header__icon" width="10" height="16">
                   <use href="./images/symbol-defs.svg#smartphone"></use>
                 </svg>
-
-                +380961111111
+                +38 096 111 11 11
               </a>
             </li>
           </ul>
+
+           <!--START Mobile Menu -->
+          <button class="burger-btn" data-menu-open>
+            <svg class="burger-icon-icon" width="24" height="16">
+              <use href="./images/symbol-defs.svg#burger-btn"></use>
+            </svg>
+          </button>
+          </div>
+          <div class="mobile-menu flex" data-menu>
+            <div>
+           <button class="mobile-close-btn" data-menu-close>
+              <svg class="close-btn-icon">
+                <use href="./images/symbol-defs.svg#close-black-2"></use>
+              </svg>
+            </button>
+              <ul class="mobile-menu-list list">
+                <li class="mobile-menu-list__item">
+                  <a class="mobile-menu__link link " href>Студия</a>
+                </li>
+                <li class="mobile-menu-list__item">
+                  <a class="mobile-menu__link link current" href="./portfolio.html"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="mobile-menu-list__item">
+                  <a class="mobile-menu__link link" href="">Контакты</a>
+                </li>
+              </ul>
+            
+            </div>
+            <div class="mobile-menu-list__down">
+              <a
+                class="mobile-menu-link__tel link"
+                href="tel:+380961111111"
+              >+38 096 111 11 11</a>
+              <a
+                class="mobile-menu-link__mail link"
+                href="mailto:info@devstudio.com"
+              >info@devstudio.com</a>
+
+              <ul class="mobile-menu-list__social list">
+                <li class="mobile-menu-list__social-item">Instagram</li>
+                <li class="mobile-menu-list__social-item">Twitter</li>
+                <li class="mobile-menu-list__social-item">Facebook</li>
+                <li class="mobile-menu-list__social-item">LinkedIn</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -485,7 +530,7 @@
     </main>
 
     <!-- Футер -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="footer-left">
           <a href="./index.html" class="footer-logo link">
@@ -496,9 +541,9 @@
           </address>
           <address class="footer-link link">info@example.com</address>
           <address class="footer-link link">+38 099 111 11 11</address>
-        </div> -->
-    <!-- Футер "Присоединяйтесь" -->
-    <!-- <div class="footer-right">
+        </div>
+        <!-- Футер "Присоединяйтесь" -->
+        <div class="footer-right">
           <h3 class="footer-text">ПРИСОЕДИНЯЙТЕСЬ</h3>
           <ul class="footer-social-list social-list list">
             <li class="social-item">
@@ -546,10 +591,10 @@
               </a>
             </li>
           </ul>
-        </div> -->
+        </div>
 
-    <!-- Футер "Подпишитесь" -->
-    <!-- <div class="footer-form-box">
+        <!-- Футер "Подпишитесь" -->
+        <div class="footer-form-box">
           <h3 class="footer-form-text">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
           <form class="footer-form" action="">
             <input
@@ -567,6 +612,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
+     <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -81,6 +81,9 @@
   left: 10px;
   top: 50%;
   transform: translateY(-50%);
+
+  width: 15px;
+  height: 15px;
 }
 
 .modal-text-input {
@@ -135,6 +138,11 @@
     // align-items: center;
     // justify-content: center;
     @extend %align-items;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
 

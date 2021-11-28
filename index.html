@@ -25,31 +25,56 @@
       <div class="container">
         <div class="header__container">
           <nav class="header__nav">
-            <a class="header__logo link" href="./index.html">
+            <a href="./index.html" class="header__logo link">
               <span class="header__accent">Web</span>Studio
             </a>
             <ul class="header__list list">
               <li class="header__item">
-                <a class="header__link link current" href>Студия</a>
+                <a href="./index.html" class="header__link link current">Студия</a>
               </li>
               <li class="header__item">
-                <a class="header__link link" href="./portfolio.html"
+                <a href="./portfolio.html" class="header__link link "
                   >Портфолио</a
                 >
               </li>
               <li class="header__item">
-                <a class="header__link link" href="">Контакты</a>
+                <a href="" class="header__link link">Контакты</a>
               </li>
             </ul>
           </nav>
-          <!--START Mobile Menu -->
+           <ul class="header-adress__list list">
+            <li class="header-adress__item">
+              <a class="header__mail link" href="mailto:info@devstudio.com">
+                <svg class="header__icon" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="header-adress__item">
+              <a class="header__tel link" href="tel:+38 096 111 11 11">
+                <svg class="header__icon" width="10" height="16">
+                  <use href="./images/symbol-defs.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+
+           <!--START Mobile Menu -->
           <button class="burger-btn" data-menu-open>
             <svg class="burger-icon-icon" width="24" height="16">
               <use href="./images/symbol-defs.svg#burger-btn"></use>
             </svg>
           </button>
-          <div class="mobile-menu" data-menu>
+          </div>
+          <div class="mobile-menu flex" data-menu>
             <div>
+           <button class="mobile-close-btn" data-menu-close>
+              <svg class="close-btn-icon">
+                <use href="./images/symbol-defs.svg#close-black-2"></use>
+              </svg>
+            </button>
               <ul class="mobile-menu-list list">
                 <li class="mobile-menu-list__item">
                   <a class="mobile-menu__link link current" href>Студия</a>
@@ -63,16 +88,17 @@
                   <a class="mobile-menu__link link" href="">Контакты</a>
                 </li>
               </ul>
+            
             </div>
             <div class="mobile-menu-list__down">
               <a
                 class="mobile-menu-link__tel link"
                 href="tel:+380961111111"
-              ></a>
+              >+38 096 111 11 11</a>
               <a
                 class="mobile-menu-link__mail link"
                 href="mailto:info@devstudio.com"
-              ></a>
+              >info@devstudio.com</a>
 
               <ul class="mobile-menu-list__social list">
                 <li class="mobile-menu-list__social-item">Instagram</li>
@@ -81,100 +107,75 @@
                 <li class="mobile-menu-list__social-item">LinkedIn</li>
               </ul>
             </div>
-            <button class="mobile-close-btn" data-menu-close>
-              <svg class="close-btn-icon">
-                <use href="./images/symbol-defs.svg#close-black-2"></use>
-              </svg>
-            </button>
           </div>
-          <!-- END Mobile Menu  -->
-          <ul class="header-adress__list list">
-            <li class="header-adress__item">
-              <a class="header__mail link" href="mailto:info@devstudio.com">
-                <svg class="header__icon" width="16" height="12">
-                  <use href="./images/symbol-defs.svg#envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="header-adress__item">
-              <a class="header__tel link" href="tel:+380961111111">
-                <svg class="header__icon" width="10" height="16">
-                  <use href="./images/symbol-defs.svg#smartphone"></use>
-                </svg>
-                +380961111111
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
     </header>
-
     <!-- Герой -->
     <main>
-      <!-- <section class="hero">
+      <section class="hero">
         <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
         <button type="button" class="hero-btn" data-modal-open>
           Заказать услугу
         </button>
-      </section> -->
+      </section>
 
       <!--О нас-->
-      <!-- <section class="about container">
-          <ul class="about-list list">
-            <li class="about-item">
-              <div class="about-icon-box">
-                <svg class="about-icon">
-                  <use href="./images/symbol-defs.svg#Group"></use>
-                </svg> </div>
-              <h2 class="about-title">ВНИМАНИЕ К ДЕТАЛЯМ</h2>
-              <p class="after-title after-title-dark">
-                Идейные соображения, а также начало повседневной работы по
-                формированию позиции.
-              </p>
-            </li>
-            <li class="about-item">
-              <div class="about-icon-box">
-                <svg class="about-icon">
-                  <use href="./images/symbol-defs.svg#clock"></use>
-                </svg>
-              </div>
-              <h2 class="about-title">ПУНКТУАЛЬНОСТЬ</h2>
-              <p class="after-title after-title-dark">
-                Задача организации, в особенности же рамки и место обучения
-                кадров влечет за собой.
-              </p>
-            </li>
-            <li class="about-item">
-              <div class="about-icon-box">
-                <svg class="about-icon">
-                  <use href="./images/symbol-defs.svg#diagram"></use>
-                </svg>
-              </div>
-              <h2 class="about-title">ПЛАНИРОВАНИЕ</h2>
-              <p class="after-title after-title-dark">
-                Равным образом консультация с широким активом в значительной
-                степени обуславливает.
-              </p>
-            </li>
-            <li class="about-item">
-              <div class="about-icon-box">
-                <svg class="about-icon">
-                  <use href="./images/symbol-defs.svg#astronaut"></use>
-                </svg>
-              </div>
-              <h2 class="about-title">СOВРЕМЕННЫЕ ТЕХНОЛОГИИ</h2>
-              <p class="after-title after-title-dark">
-                Значимость этих проблем настолько очевидна, что реализация
-                плановых заданий.
-              </p>
-            </li>
-          </ul>
-        
-      </section> -->
+      <section class="about container">
+        <ul class="about-list list">
+          <li class="about-item">
+            <div class="about-icon-box">
+              <svg class="about-icon">
+                <use href="./images/symbol-defs.svg#Group"></use>
+              </svg>
+            </div>
+            <h2 class="about-title">ВНИМАНИЕ К ДЕТАЛЯМ</h2>
+            <p class="after-title after-title-dark">
+              Идейные соображения, а также начало повседневной работы по
+              формированию позиции.
+            </p>
+          </li>
+          <li class="about-item">
+            <div class="about-icon-box">
+              <svg class="about-icon">
+                <use href="./images/symbol-defs.svg#clock"></use>
+              </svg>
+            </div>
+            <h2 class="about-title">ПУНКТУАЛЬНОСТЬ</h2>
+            <p class="after-title after-title-dark">
+              Задача организации, в особенности же рамки и место обучения кадров
+              влечет за собой.
+            </p>
+          </li>
+          <li class="about-item">
+            <div class="about-icon-box">
+              <svg class="about-icon">
+                <use href="./images/symbol-defs.svg#diagram"></use>
+              </svg>
+            </div>
+            <h2 class="about-title">ПЛАНИРОВАНИЕ</h2>
+            <p class="after-title after-title-dark">
+              Равным образом консультация с широким активом в значительной
+              степени обуславливает.
+            </p>
+          </li>
+          <li class="about-item">
+            <div class="about-icon-box">
+              <svg class="about-icon">
+                <use href="./images/symbol-defs.svg#astronaut"></use>
+              </svg>
+            </div>
+            <h2 class="about-title">СOВРЕМЕННЫЕ ТЕХНОЛОГИИ</h2>
+            <p class="after-title after-title-dark">
+              Значимость этих проблем настолько очевидна, что реализация
+              плановых заданий.
+            </p>
+          </li>
+        </ul>
+      </section>
 
       <!--Работа-->
-      <!-- <section class="work">
+      <section class="work">
         <div class="container">
           <h3 class="pre-title">Чем мы занимаемся</h3>
           <div class="application">
@@ -219,9 +220,9 @@
             </ul>
           </div>
         </div>
-      </section> -->
+      </section>
       <!--Наша команда-->
-      <!-- <section class="team">
+      <section class="team">
         <div class="container">
           <h3 class="pre-title">Наша команда</h3>
           <ul class="team-list list">
@@ -497,10 +498,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- Клиенты -->
-    <!-- <section class="clients">
+    <section class="clients">
       <div class="container">
         <h3 class="pre-title">Постоянные клиенты</h3>
         <ul class="clients-list list">
@@ -548,10 +549,10 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
 
     <!-- Футер -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="footer-left">
           <a href="./index.html" class="footer-logo link">
@@ -562,9 +563,9 @@
           </address>
           <address class="footer-link link">info@example.com</address>
           <address class="footer-link link">+38 099 111 11 11</address>
-        </div> -->
-    <!-- Футер "Присоединяйтесь" -->
-    <!-- <div class="footer-right">
+        </div>
+        <!-- Футер "Присоединяйтесь" -->
+        <div class="footer-right">
           <h3 class="footer-text">ПРИСОЕДИНЯЙТЕСЬ</h3>
           <ul class="footer-social-list social-list list">
             <li class="social-item">
@@ -612,10 +613,10 @@
               </a>
             </li>
           </ul>
-        </div> -->
+        </div>
 
-    <!-- Футер "Подпишитесь" -->
-    <!-- <div class="footer-form-box">
+        <!-- Футер "Подпишитесь" -->
+        <div class="footer-form-box">
           <h3 class="footer-form-text">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h3>
           <form class="footer-form" action="">
             <input
@@ -633,18 +634,18 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- Бекдроп -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="close-btn" type="button" data-modal-close>
           <svg class="backdrop-icon">
             <use href="./images/symbol-defs.svg#close-black"></use>
           </svg>
-        </button> -->
-    <!-- Модальное окно -->
-    <!-- <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        </button>
+        <!-- Модальное окно -->
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
         <form action="#" class="modal-form">
           <div class="modal-field">
             <label class="modal-label" for="user-name"> Имя </label>
@@ -655,7 +656,7 @@
                 name="user-name"
                 id="user-name"
               />
-              <svg class="modal-icon" width="18" height="18">
+              <svg class="modal-icon" width="12" height="12">
                 <use href="./images/symbol-defs.svg#person-black"></use>
               </svg>
             </span>
@@ -664,7 +665,7 @@
             <label class="modal-label" for="user-tel">Телефон</label>
             <span class="modal-wrapper">
               <input class="modal-input" type="tel" name="tel" id="user-tel" />
-              <svg class="modal-icon" width="18" height="18">
+              <svg class="modal-icon" width="12" height="12">
                 <use href="./images/symbol-defs.svg#phone-black"></use>
               </svg>
             </span>
@@ -678,7 +679,7 @@
                 name="user-email"
                 id="user-email"
               />
-              <svg class="modal-icon" width="18" height="18">
+              <svg class="modal-icon" width="12" height="12">
                 <use href="./images/symbol-defs.svg#email-black"></use>
               </svg>
             </span>
@@ -714,6 +715,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
-    <script src="./js/menu.js"></script> -->
+    <script src="./js/menu.js"></script>
   </body>
 </html>
