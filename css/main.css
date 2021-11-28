@@ -343,6 +343,8 @@ body {
 .header__mail,
 .header__tel {
   display: inline-flex;
+  align-items: center;
+  margin-right: 30px;
   font-size: 14px;
   line-height: 1.14;
   font-weight: 500;
@@ -380,10 +382,6 @@ body {
     flex-direction: column;
     align-content: center;
   }
-}
-
-.header-adress__item {
-  padding-bottom: 10px;
 }
 
 .header__icon {
