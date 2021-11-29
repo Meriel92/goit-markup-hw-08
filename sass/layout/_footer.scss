@@ -111,7 +111,6 @@
 }
 
 .footer-link {
-  margin-bottom: 9px;
   font-family: Roboto;
   font-style: normal;
   // font-weight: normal;
@@ -120,6 +119,10 @@
   // letter-spacing: 0.03em;
   @include font(14px, 1.71, 400, 0.03em);
   color: var(--primary-footer-two-color);
+}
+
+.footer-link:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .after-title {
