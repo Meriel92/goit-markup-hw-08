@@ -1,5 +1,8 @@
 body {
   font-family: Roboto, sans-serif;
+  @media screen and (min-width: 320) {
+    overflow-x: hidden;
+  }
 }
 .list {
   list-style: none;
